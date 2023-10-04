@@ -1,0 +1,397 @@
+/* globle styels */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  position: relative;
+}
+
+h1 {
+  font-size: 1.9rem;
+}
+
+li, button, label, input, p, a {
+  font-size: 1.9rem;
+}
+
+h2 {
+  font-size: 3rem;
+}
+
+h3 {
+  font-size: 1.9rem;
+  font-weight: normal;
+}
+
+h4, h5 {
+  font-size: 1.5rem;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #2c2c2c;
+}
+
+.main-head {
+  width: 95%;
+  margin: 0 0 0 auto;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  min-height: 10vh;
+  width: 60%;
+  flex-wrap: wrap;
+}
+nav .logo {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 10rem;
+}
+nav .logo h1 {
+  margin: 2rem;
+}
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+  flex: 1 1 40rem;
+}
+
+.intro {
+  min-height: 80vh;
+  width: 90%;
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+}
+.intro h2 {
+  font-size: 6rem;
+  margin-bottom: 2rem;
+  padding-top: 2rem;
+  background: linear-gradient(#38d39f, #38a4d2);
+  -webkit-background-clip: text;
+          background-clip: text;
+  -webkit-text-fill-color: transparent;
+  display: inline-block;
+}
+.intro h3 {
+  font-size: 3rem;
+  padding: 2rem 0rem;
+}
+.intro p {
+  padding-top: 1.9rem;
+  color: #2c2c2c;
+}
+
+.splash {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+  bottom: 0%;
+  height: 100%;
+  z-index: -1;
+}
+
+.intro-social {
+  margin-top: 4rem;
+}
+.intro-social a {
+  margin-right: 5rem;
+}
+
+.active {
+  background: #2c2c2c;
+  color: white;
+  padding: 1rem 3rem;
+  border-radius: 2rem;
+}
+
+.intro-text, .intro-imges {
+  flex: 1 1 40rem;
+}
+
+/* animation */
+#fumes {
+  animation: fumes 1.5s ease infinite alternate;
+}
+
+#fumes2 {
+  animation: fumes 1.5s ease infinite alternate 0.5s;
+}
+
+#me {
+  animation: me 3s ease infinite alternate;
+  transform-origin: bottom;
+}
+
+@keyframes me {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(5deg);
+  }
+}
+@keyframes fumes {
+  from {
+    transform: translateY(0%);
+  }
+  to {
+    transform: translateY(-8%);
+  }
+}
+/*  was on a diffrent photo that i changed
+#clock-arrow{
+    animation: clock 1.5s  infinite linear ;
+    transform-box: fill-box;
+    transform-origin: bottom;
+
+}
+
+
+
+@keyframes clock{
+    from{
+        transform: rotateZ(0deg);
+    }
+    to{
+        transform: rotateZ(360deg);
+
+    }
+}
+
+*/
+.projects {
+  width: 90%;
+  margin: auto;
+  min-height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
+  text-align: center;
+  flex-wrap: wrap;
+}
+.projects h2 {
+  margin: 5rem;
+  font-size: 1.9rem;
+}
+
+.elina, .travelly {
+  flex: 1 1 40rem;
+  margin-bottom: 5rem;
+}
+
+.form-section {
+  min-height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 5rem;
+}
+.form-section form {
+  padding: 3rem 10rem;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, 0.2), 0px 20px 40px rgba(0, 0, 0, 0.2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 2rem;
+  background: white;
+}
+.form-section form input,
+.form-section form textarea {
+  margin: 2rem;
+  width: 100%;
+}
+.form-section form input:focus,
+.form-section form textarea:focus {
+  outline: 2px solid black;
+}
+.form-section form textarea {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+.form-section form button {
+  width: 100%;
+  background: linear-gradient(#38d39f, #38a4d2);
+  padding: 2rem;
+  color: rgb(4, 4, 4);
+}
+.form-section form button:focus {
+  background: rgb(41, 197, 119);
+}
+
+/* animations */
+#leafs {
+  animation: leafs 8s ease forwards, plant-shake 5s infinite ease-in-out alternate-reverse 8s;
+  transform-origin: bottom;
+}
+
+#lines {
+  animation: lines 3s ease-in;
+}
+
+@keyframes leafs {
+  from {
+    transform: rotateZ(-30deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes plant-shake {
+  from {
+    transform: rotateZ(-5deg);
+  }
+  to {
+    transform: rotateZ(0deg);
+  }
+}
+@keyframes lines {
+  from {
+    transform: translateY(20%);
+  }
+  to {
+    transform: translateY(0%);
+  }
+}
+footer {
+  background: #2c2c2c;
+  color: white;
+  min-height: 10vh;
+  padding: 0% 5%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 2rem;
+}
+footer ul {
+  flex: 1 1 40rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-direction: row;
+}
+footer h4 {
+  flex: 1 1 40rem;
+}
+
+@media screen and (max-width: 1332px) {
+  html {
+    font-size: 53%;
+  }
+  .splash {
+    display: none;
+  }
+  svg {
+    width: 80%;
+    height: 80%;
+  }
+  nav {
+    width: 100%;
+  }
+  form {
+    margin: 2rem;
+    min-width: 60vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 790px) {
+  html {
+    font-size: 45%;
+  }
+  #me {
+    animation: none;
+  }
+  .splash {
+    display: none;
+  }
+  svg {
+    width: 80%;
+  }
+  .main-head {
+    width: 100%;
+  }
+  nav .logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: coulmn;
+    flex: 1 1 20rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+  }
+  nav ul {
+    flex: 1 1 60rem;
+    margin: 2rem 0rem;
+  }
+  .intro-text {
+    text-align: center;
+    margin-top: 5rem;
+  }
+  .intro-imges {
+    text-align: center;
+  }
+  .intro-social {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  .intro-social a {
+    margin: 2rem;
+  }
+  .elina,
+  .travelly {
+    flex: 1 1 40rem;
+  }
+  .elina img,
+  .travelly img {
+    width: 100%;
+    height: 100%;
+  }
+  .form-section {
+    display: grid;
+  }
+  .contactlogo {
+    height: 25vh;
+    margin-bottom: 0;
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+  }
+  footer {
+    margin-top: 0;
+  }
+}/*# sourceMappingURL=style.css.map */
